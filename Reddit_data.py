@@ -18,3 +18,9 @@ posts = pd.DataFrame(posts,columns=['title', 'score', 'url', 'num_comments', 'bo
 
 about = crypto_subreddit.description
 members = crypto_subreddit.subscribers
+
+cryptoTech = reddit.subreddit('CryptoTechnology')
+tech = []
+for post in crypto_subreddit.hot(limit=10):
+    tech.append([post.title, post.score, post.url, post.num_comments, post.selftext, post.created])
+tech = pd.DataFrame(tech,columns=['title', 'score', 'url', 'num_comments', 'body', 'created'])
