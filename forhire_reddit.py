@@ -44,3 +44,9 @@ for i in range(0, len(posts['title'])):
     posts['title'][i] = posts['title'][i].lower()
 
 hiringDF = hiring_df.join(posts, lsuffix='-')
+
+hiringDF = hiringDF.drop(['title-'], axis =1 ).drop([0])
+forhireDF = forhire_df.join(posts, lsuffix='-').drop(['title-'], axis=1).drop([0])
+df = pd.DataFrame({ 'Number of posts' :[len(hiringDF),len(forhireDF)]},index=['Hiring', 'For Hire'])
+#plot = df.plot.pie(y='Number of posts', figsize=(5, 5))
+
