@@ -9,7 +9,7 @@ Created on Mon Jan 10 16:17:34 2022
 import praw
 import pandas as pd
 
-reddit = praw.Reddit(client_id='Mb_8nBlqu5m-Nr2n87sOrQ', client_secret='M5mgO5tg4nwcOKXkYLBpcYjPF-2SIw', user_agent='WebScraping Isabel')
+reddit = praw.Reddit(client_id='x', client_secret='x', user_agent='x')
 
 posts = []
 forhire = reddit.subreddit('forhire')
