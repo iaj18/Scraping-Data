@@ -8,7 +8,7 @@ Created on Fri Dec 24 14:04:57 2021
 import praw
 import pandas as pd
 
-reddit = praw.Reddit(client_id='Mb_8nBlqu5m-Nr2n87sOrQ', client_secret='M5mgO5tg4nwcOKXkYLBpcYjPF-2SIw', user_agent='WebScraping Isabel')
+reddit = praw.Reddit(client_id='x', client_secret='x', user_agent='x')
 
 posts = []
 crypto_subreddit = reddit.subreddit('CryptoCurrencies')
